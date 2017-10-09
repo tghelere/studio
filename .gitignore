@@ -1,0 +1,11 @@
+cache/*
+compile/*
+bkp/*
+system/config.php
+*.gif
+*.jpg
+*.jpeg
+*.png
+*.txt
+*.sql
+*.bkp

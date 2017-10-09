@@ -1,0 +1,439 @@
+/*=========== GLOBAL CONFIGS ==========*/
+* {padding: 0;}
+body{font-family: 'Open Sans', sans-serif !important; background:#f3f1ed url(img/bg_texture.png) repeat;}
+a{text-decoration: none !important; color: #31c1cd;}
+p{ color:#131212;        /* rubens */ font-size: 16px;}
+ul {list-style: none !important;        /* rubens */ font-size: 16px;}
+h1, h2, h3, h4, h5{ font-family: 'Shadows Into Light Two' !important;}
+.btn{background-color:#31c1cd; color:#fff;}
+.btn:hover{background-color:#a4dadf; color:#131212; }
+section{padding:5px 0;}
+
+/*=========== NANOBAR ==========*/
+div.nanobar div.bar { background: #31c1cd; border-radius: 3px; box-shadow: 0 0 6px #59d; height:3px; margin: 0 auto;}
+
+/*=========== CUSTOMS ==========*/
+.bg-verde{background-color:#31c1cd;}
+.cl-verde{color:#31c1cd;}
+.bg-azulclaro{background-color:#c0dbd2;}
+.cl-azulclaro{color:#c0dbd2;}
+.bg-cinza{background-color:#343434;}
+.cl-cinza{color:#343434;}
+.cl-black {color: #000; }
+.bg-white {background-color: #fff;}
+.cl-white {color: #fff;}
+.bg-cinza-img{background: url(img/bg.png) repeat;}
+.bg-input{background-color:#D1D1D1;}
+.radius-none{border-radius:0;}
+
+/*=========== MENU ==========*/
+div.menu .navbar-right li.active a { background-color: #31c1cd; color:#343434; }
+div.menu a.logo{width:57px; height:43px; display: block; float: left; background:url(img/logo.png) no-repeat center -43px; margin-top:8px;}
+div.menu a.logo:hover{ background-position:0 0;}
+div.menu a.logo h1{display: none;}
+div.menu ul{padding:4px 0;}
+div.menu .nav li a {color:#fff; font-size: 12px; padding: 15px 13px; text-transform: uppercase;}
+div.menu .nav li a:hover {border: none; color:#31c1cd;  background-color: rgba(0,0,0,.6);}
+div.menu .navbar-toggle {border-radius: 0;}
+div.menu div#navbar-menu:hover, div.menu div#navbar-close:hover{ color:#000;}
+
+/*=========== BANNERS ==========*/
+#banners { overflow: hidden; position: relative;}
+#banners .carousel-inner .item { opacity: 0; -webkit-transition-property: opacity; transition-property: opacity; background-repeat: no-repeat; background-size: cover; height: 2037px; }
+#banners .carousel-inner .item:after { content: " "; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,.1); }
+#banners .carousel-inner .active { opacity: 1; }
+#banners .carousel-inner .active.left, #banners .carousel-inner .active.right { left: 0; opacity: 0; z-index: 1; }
+#banners .carousel-inner .next.left, #banners .carousel-inner .prev.right { opacity: 1; }
+#banners .carousel-control { z-index: 2; }
+#banners .left-control, .right-control { position: absolute; top: 50%; height: 51px; width: 51px; line-height: 48px; border-radius: 50%; border:1px solid #fff; z-index: 20; font-size: 24px; color: #fff; text-align: center; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; }
+#banners .left-control { left: -51px; }
+#banners .right-control { right: -51px; }
+#banners .left-control:hover,
+  #banners.right-control:hover { color:#a4dadf; background-color:#343434;}
+#banners:hover .left-control { left:30px; color:#31c1cd;}
+#banners:hover .right-control { right:30px; color:#31c1cd;}
+#banners .caption { position: absolute; padding: 0 10%; top: 30%; margin-top: -104px; left: 0; right: 0; text-align: center; text-transform: uppercase; z-index: 15; font-size: 18px; font-weight: 300; color: #fff; }
+#banners .caption h1 { color: #fff; font-size: 40px; margin-bottom: 30px; }
+#banners .caption .btn-start { color: #fff; font-size: 14px; font-weight: 600; padding:14px 40px; border: 1px solid #6e6d6c; border-radius: 4px; margin-top: 40px; }
+#banners .caption .btn-start:hover { color: #fff; }
+#banners div.home { background-color:rgba(49,193,204,.6);; padding: 50px;  position:relative ; margin:0 auto; width:40%; min-width:400px; top:20%;}
+#banners div.home img{ width:90%; height:90%; margin: 0 auto;}
+
+/*=========== FOOTER ==========*/
+footer div.footer-top{height:250px; background: #606060 url(img/footer_01.png) no-repeat left top ; width:100%; float: left;}
+footer div.footer-top div.footer-list{margin: 40px auto 0; }
+footer div.footer-top div.footer-list ul{}
+footer div.footer-top div.footer-list ul li{ color: #ffffff; font-size:10px; width:100%;}
+footer div.footer-top div.footer-list ul li.title{ color:#a4dadf; text-transform: uppercase; padding-bottom:8px; font-size:12px; height:30px;}
+footer div.footer-top div.footer-list ul li a{color: #ffffff;}
+footer div.footer-top div.footer-list ul li a:hover{color: #a4dadf;}
+footer div.footer-top div.footer-list li.socials{ float:left; margin-bottom: 18px;}
+footer div.footer-top div.footer-list li.socials ul{min-width:105px;}
+footer div.footer-top div.footer-list li.socials ul li{width:35px; float: left;}
+footer div.footer-top div.footer-list li.socials ul li a{height:25px; width: 25px; background: url(img/footer_social_icones.png) no-repeat top left; display: block;}
+footer div.footer-top div.footer-list li.socials ul li a.yt{background-position: 0 -25px;}
+footer div.footer-top div.footer-list li.socials ul li a.yt:hover{background-position:0 0;;}
+footer div.footer-top div.footer-list li.socials ul li a.ig{background-position:0 -75px;}
+footer div.footer-top div.footer-list li.socials ul li a.ig:hover{background-position:0 -50px;}
+footer div.footer-top div.footer-list li.socials ul li a.fb{background-position: 0 -125px;}
+footer div.footer-top div.footer-list li.socials ul li a.fb:hover{background-position: 0 -100px;}
+footer div.footer-top div.footer-list li.socials ul li a span{display:none;}
+
+footer div.footer-bottom{height:20px; background: #363636; width:100%; float: left;}
+footer div.footer-bottom p{color:#fff; font-size:10px; padding-top:4px; margin:0 !important;}
+
+
+/*
+=========== PAGINAS ==========
+(div#controller) para alterações na pagina toda
+(section.controller) para alterações no conteudo da pagina
+*/
+div#home{}
+section.home div.pilates{padding:15px;}
+section.home div.ondeestamos{background:url(img/home_localizacao.jpg) no-repeat top center; height:300px; background-size: cover; margin-top:5px; margin-bottom:5px;}
+section.home div.ondeestamos p.title{ margin: 30px 0 0 !important; font-size:16px;}
+section.home div.ondeestamos p{margin-bottom:20px;}
+section.home div.ondeestamos h2{margin:0 0 20px;}
+section.home div.ondeestamos .btn-home{ margin-left:40px;}
+
+div#pilates{}
+section.pilates{}
+section.pilates a.fancy{ color:#fff;}
+
+div#powerplate{}
+section.powerplate{}
+
+div#trx{}
+section.trx{}
+
+div#terapias{}
+section.terapias{}
+
+div#quemsomos{}
+section.quemsomos{}
+section.quemsomos a{ color: #2B5973;}
+section.quemsomos div.member{ padding-bottom: 30px !important;}
+section.quemsomos div.ctozoom{text-align: center;
+background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */}
+
+div#contato{}
+section.contato div.img-fachada img{ max-height:260px}
+section.contato div.fone{padding-left: 30px; background:url(img/phone.png) no-repeat top left; background-size:contain; line-height:25px; font-size:20px;}
+section.contato div.phone{line-height:25px; font-size:20px;}
+section.contato div.phone svg{float:left; width:28px; margin-right:10px;}
+section.contato div.phone p{float:left;}
+section.contato div.mapa iframe{width:100%; max-height:300px; pointer-events: none;}
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+/* ALTERAÇÕES RUBENS */
+
+.c-bg-form-blue{
+	background-color: #31c1cc !important;
+	color: #FFF;
+}
+
+p.title{
+	font-family: "Shadows Into Light Two" !important;
+	font-weight: bold;
+	font-size:35px;
+}
+
+p.title span{
+	font-size: 15px;
+}
+
+.c-contact{padding: 40px;}
+
+
+.c-content-box.c-size-sm {
+    padding: 30px 0;
+}
+
+.c-content-box.c-size-md {
+    padding: 60px 0;
+}
+
+.c-content-box.c-size-lg {
+    padding: 80px 0;
+}
+
+.c-content-box.c-size-xg {
+    padding: 100px 0;
+}
+
+.c-content-box.c-no-bottom-padding {
+    padding-bottom: 0;
+}
+
+.c-content-box.c-no-top-padding {
+    padding-top: 0;
+}
+
+.c-content-box.c-no-padding {
+    padding: 0;
+}
+
+.c-content-box.c-overflow-hide {
+    overflow: hidden;
+}
+
+@media (max-width: 991px) {
+	.c-content-box > .container-fluid {
+	    padding: 0 100px;
+	}
+	.c-content-box.c-size-sm {
+	    padding: 20px 0;
+	}
+	.c-content-box.c-size-md {
+	    padding: 30px 0;
+	}
+	.c-content-box.c-size-lg {
+	    padding: 40px 0;
+	}
+	.c-content-box.c-size-xg {
+	    padding: 60px 0;
+	}
+}
+
+.c-bs-grid-reset-space .row,
+.c-bs-grid-reset-space div[class^="col-"],
+.c-bs-grid-reset-space div[class*=" col-"] {
+  margin: 0;
+  padding: 0; }
+
+
+.c-margin-b-30 {
+   margin-bottom: 30px;
+}
+
+ul.c-items{
+	padding: 0 50px;
+    font-size: 16px;
+}
+
+ul.c-items > li{
+	list-style: outside none none;
+	margin-bottom: 13px;
+}
+
+ul.c-items > li.evidence{
+	background: #bbf8f1;
+	padding: 20px;
+	text-align: center;
+
+}
+
+p.quote{
+	font-family: "Shadows Into Light Two" !important;
+	font-size: 17px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+p.quote span{
+	font-size: 13px;
+}
+
+.margin-botton-30{
+	margin-bottom: 30px;
+}
+
+.c-content-overlay {
+    overflow: hidden;
+    position: relative;
+}
+.c-content-overlay .c-overlay-object {
+    position: relative;
+    z-index: 1;
+}
+.c-content-overlay .c-overlay-wrapper {
+    background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: -100%;
+    transition: all 0.2s ease 0s;
+    width: 100%;
+    z-index: 3;
+}
+.c-content-overlay .c-overlay-wrapper::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.c-content-overlay .c-overlay-wrapper::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.c-content-overlay .c-overlay-wrapper .c-overlay-content {
+    display: inline-block;
+    height: auto;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 95%;
+}
+.c-content-overlay .c-overlay-wrapper .c-overlay-content i {
+    background: #000000 none repeat scroll 0 0;
+    border-radius: 40px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    height: 44px;
+    margin: 0 5px;
+    opacity: 0.7;
+    padding: 14px 6px 8px;
+    text-align: center;
+    width: 44px;
+}
+.c-content-overlay .c-overlay-wrapper .c-overlay-content i:hover {
+    opacity: 1;
+}
+.c-content-overlay .c-overlay-wrapper.c-overlay-padding {
+    height: calc(100% - 20px);
+    left: 10px;
+    width: calc(100% - 20px);
+}
+.c-content-overlay:hover {
+    cursor: pointer;
+}
+.c-content-overlay:hover .c-overlay-wrapper {
+    opacity: 1;
+    top: 0;
+}
+.c-content-overlay:hover .c-overlay-wrapper.c-overlay-padding {
+    top: 10px;
+}
+.c-content-overlay .c-overlay-border {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    bottom: 10px;
+    left: 10px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+}
+
+/*############# Power Plate ###############*/
+
+ul.stretching-text{
+	padding: 0 20px;
+}
+
+ul.stretching-text > li{
+	list-style: outside none none;
+	margin-bottom: 30px;
+	font-size:16px;
+}
+
+.know-website{
+	background-color: #31c1cc !important;
+	padding: 20px;
+    margin-top: 30px;
+}
+
+.know-website p{
+	text-align: center;
+	font-size: 18px;
+}
+
+.know-website p a{
+	color: #FFF;
+}
+
+.pading-left-50{
+    padding-left: 50px;
+}
+/*############# TRX ###############*/
+
+.bg-trx-beneficios-img{background:url(img/trx_beneficios.png) no-repeat top center; height:300px; background-size: cover; margin-top:5px;}
+
+.trx-ul{
+	margin-top: 50px;
+}
+
+ .trx-ul > li{
+	list-style: outside none none;
+	text-align: center;
+	margin-bottom: 30px;
+	font-size:30px;
+	color: #ffd700;
+	font-weight: bold;
+}
+
+/*############# quemsomos ###############*/
+
+.commitment{
+	text-transform:uppercase;
+	text-align:center;
+	margin-bottom: 2px;
+}
+
+.title-team{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.border-right{
+	border-right: 1px solid #000;
+}
+
+.border-left{
+	border-left: 1px solid #000;
+}
+
+/*############# Terapias  ###############*/
+
+.therapies-title{
+	margin-bottom: 20px;
+	font-size: 22px;
+	color: #31c1cc !important;
+}
+.therapies-text{
+	margin: 25px 0;
+}
+
+.padding-botton-20{
+	padding-bottom: 20px;
+}
+.border-botton-black{
+	border-bottom: 1px solid #000;
+}
+.padding-top-65{padding-top: 65px !important;}

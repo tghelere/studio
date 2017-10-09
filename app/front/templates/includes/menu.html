@@ -1,0 +1,23 @@
+<div class="main-nav menu bg-cinza">
+  <div class="container">
+      <div class="navbar-header">
+        <button id="ChangeToggle" type="button" class="navbar-toggle collapsed bg-azulclaro cl-cinza" data-toggle="collapse" data-target=".navbar-collapse">
+          <div id="navbar-menu"><span class="fa fa-bars fa-lg"></span></div>
+          <div id="navbar-close" class="hidden"><span class="fa fa-times fa-lg"></span></div>
+        </button>
+        <a class="logo" href="{$rootUrl}" title="{$name} - {$slogan}"><h1>{$name}</h1></a>
+      </div>
+      <div class="collapse navbar-collapse text-center">
+        <ul class="nav navbar-nav navbar-right">
+          {nocache}
+          <li {if $thisController == 'pilates'}class="active"{/if}><a href="{$rootUrl}/pilates/" title="Pilates">Pilates</a></li>
+          <li {if $thisController == 'powerplate'}class="active"{/if}><a href="{$rootUrl}/powerplate/" title="Power Plate">Power Plate</a></li>
+          <li {if $thisController == 'trx'}class="active"{/if}><a href="{$rootUrl}/trx/" title="TRX - Treinamento em Suspensão">TRX - Treinamento em Suspensão</a></li>
+          <li {if $thisController == 'terapias'}class="active"{/if}><a href="{$rootUrl}/terapias/" title="Terapias">Terapias</a></li>
+          <li {if $thisController == 'quemsomos'}class="active"{/if}><a href="{$rootUrl}/quemsomos/" title="Quem Somos">Quem Somos</a></li>
+          <li {if $thisController == 'contato'}class="active"{/if}><a href="{$rootUrl}/contato/" title="Contato">Contato</a></li>
+          {/nocache}
+        </ul>
+      </div>
+  </div>
+</div>

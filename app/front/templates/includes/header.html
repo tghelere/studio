@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="{$charSet}">
+        <meta http-equiv="Content-Language" content="pt-br" />
+        <meta name="language" content="pt-br" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        {if $ambiente == "producao"}
+        {literal}
+        <!-- Google Tag Manager -->
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayer', 'GTM-KMCXTXJ');</script>
+        <!-- End Google Tag Manager -->
+        <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KMCXTXJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        {/literal}
+        {/if}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {nocache}
+          <meta name="description" content="{$description}">
+          <meta name="keywords" content="{$keywords}" />
+          <title>{$title}</title>
+          <link rel="canonical" href="{$canonical}" />
+        {/nocache}
+        <meta name="robots" content="all" />
+        <meta name="author" content="{$author}">
+        <style type="text/css" media="all">
+        	@import url({$rootUrl}/min/g=css);
+        </style>
+
+        <link rel="shortcut icon" href="{$img}favicon.ico">
+        <link rel="apple-touch-icon" href="{$img}apple-touch-icon.png">
+    </head>
+    <body class="{$thisController}">
+      <div id="fb-root"></div>
+      <div id="{if $thisController eq "index"}home{else}{$thisController}{/if}">
+        <header>
+          {if $banners}
+            {include file="includes/banners.html"}
+          {/if}
+          {include file="includes/menu.html"}
+        </header>
+        <section class="{if $thisController eq "index"}home{else}{$thisController}{/if}">

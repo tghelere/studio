@@ -1,0 +1,25 @@
+{nocache}
+<!-- Banners -->
+<div id="banners" class="carousel slide" data-ride="carousel">
+	<div class="carousel-inner">
+		{foreach from=$banners item=banner}
+			<div class="item {if ($banners|@count >= 1 && $banner.order == 0)}active{/if}" style="background: url({$img}banners/{$banner.url}) center center no-repeat; background-size:auto; ">
+				{if $banner.html != null}
+					{$banner.html}
+				{/if}
+				{if $banner.title != null}
+					<div class="caption">
+						<h1 class="animated fadeInLeftBig">{$banner.title}</h1>
+						<p class="animated fadeInRightBig">{$banner.sub}</p>
+					</div>
+				{/if}
+			</div>
+		{/foreach}
+	</div>
+	{if ($banners|@count > 1)}
+	<a class="left-control" href="#banners" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+	<a class="right-control" href="#banners" data-slide="next"><i class="fa fa-angle-right"></i></a>
+	{/if}
+</div>
+<!-- Banners -->
+{/nocache}
